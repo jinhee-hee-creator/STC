@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottomSheetContainer_auth"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/dialogbox">
+
+    <TextView
+        android:id="@+id/text1_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="105dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/notosanskr_regular"
+        android:text="본인인증"
+        android:textColor="#FC7B86"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/line1"
+        android:layout_width="274dp"
+        android:layout_height="2dp"
+        android:layout_below="@id/text1_password"
+        android:layout_centerHorizontal="true"
+        android:background="#FC7B86" />
+
+
+    <EditText
+        android:id="@+id/et_auth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line1"
+        android:layout_alignLeft="@id/line1"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/auth_rectangle"
+        android:drawableLeft="@drawable/text_auth"
+        android:paddingLeft="90dp" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_auth"
+        android:layout_marginTop="30dp"
+        android:layout_alignLeft="@id/et_auth"
+        android:text="서비스 정책"
+        android:textSize="18sp"
+        android:textColor="#4A4A4A"/>
+
+    <ImageView
+        android:id="@+id/checkbox"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_below="@id/text1"
+        android:layout_alignLeft="@id/line1"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/check_fill" />
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text1"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/checkbox"
+        android:text="서비스 이용약관에 동의합니다."
+        android:textColor="#4A4A4A"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text2"
+        android:layout_alignRight="@id/line1"
+        android:fontFamily="@font/notosanskr_regular"
+        android:text="전문보기"
+        android:textColor="#FC7B86"
+        android:textSize="14sp" />
+
+
+    <ImageView
+        android:id="@+id/warning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text2"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/text3"
+        android:background="@drawable/warning" />
+
+
+    <ImageView
+        android:id="@+id/checkbox2"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_below="@id/checkbox"
+        android:layout_alignLeft="@id/line1"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/checkbox_outline" />
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text3"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/checkbox2"
+        android:text="개인정보 이용방침에 동의합니다."
+        android:textColor="#4A4A4A"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/text5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text4"
+        android:layout_alignRight="@id/line1"
+        android:fontFamily="@font/notosanskr_regular"
+        android:text="전문보기"
+        android:textColor="#FC7B86"
+        android:textSize="14sp" />
+    <ImageView
+        android:id="@+id/warning2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text4"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/text5"
+        android:background="@drawable/warning" />
+
+    <ImageView
+        android:id="@+id/line2"
+        android:layout_width="274dp"
+        android:layout_height="2dp"
+        android:layout_below="@id/text5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#8B8B8B" />
+
+    <ImageView
+        android:id="@+id/checkbox3"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_below="@id/line2"
+        android:layout_alignLeft="@id/line1"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/checkbox_outline" />
+
+    <TextView
+        android:id="@+id/text6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line2"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/checkbox3"
+        android:text="모든 이용약관을 확인하였으며 동의합\n니다."
+        android:textColor="#4A4A4A"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_confirmregister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text6"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/agreebtn"
+        android:text="회원가입 완료"
+        android:textColor="#ffffff"
+        android:textSize="16dp" />
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

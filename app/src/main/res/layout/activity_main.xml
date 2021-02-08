@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/verticalBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="127dp"
+        android:src="@drawable/verticalbar" />
+
+    <ImageView
+        android:id="@+id/naman"
+        android:layout_width="198dp"
+        android:layout_height="87dp"
+        android:layout_marginTop="117dp"
+        android:layout_toRightOf="@id/verticalBar"
+
+        android:background="@drawable/naman" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/naman"
+        android:layout_marginTop="20dp"
+
+
+        android:layout_alignLeft="@id/emailText"
+
+        android:fontFamily="@font/notosanskr_regular"
+        android:text="회원이신가요?"
+        android:textColor="#ffffff"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/emailText"
+        android:layout_marginBottom="20dp"
+        android:layout_alignLeft="@id/naman"
+        android:fontFamily="@font/notosanskr_regular"
+        android:text="계정이 없다면 새로운 계정을 생성해 주세요"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+
+    <EditText
+        android:id="@+id/emailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/buttonShow"
+        android:layout_marginBottom="20dp"
+        android:layout_alignLeft="@id/verticalBar"
+
+        android:background="@drawable/emailbox"
+        android:fontFamily="@font/notosanskr_regular"
+        android:paddingLeft="10dp"
+        android:text="hanmajoro97@ttk.com"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+
+    <Button
+        android:id="@+id/buttonShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/googleGoOn"
+        android:layout_marginBottom="40dp"
+        android:layout_alignLeft="@id/emailText"
+
+        android:background="@drawable/emailbox"
+        android:fontFamily="@font/notosanskr_regular"
+        android:text="동의후 계속하기"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/googleGoOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignLeft="@id/emailText"
+
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="91dp"
+        android:background="@drawable/round_btn_fill"
+        android:drawableLeft="@drawable/google_go"
+        android:paddingLeft="41dp" />
+
+    <Button
+        android:id="@+id/naverGoOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/googleGoOn"
+
+        android:layout_marginBottom="91dp"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginLeft="11dp"
+        android:background="@drawable/round_btn_fill"
+        android:drawableLeft="@drawable/naver_go"
+        android:paddingLeft="41dp" />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="27dp"
+        android:layout_alignLeft="@id/googleGoOn"
+        android:layout_marginLeft="21dp"
+        android:fontFamily="@font/notosanskr_regular"
+        android:text="이미 계정이 있으신가요?"
+        android:textColor="#FFEA50"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+        android:layout_marginBottom="27dp"
+        android:layout_toRightOf="@id/text3"
+        android:layout_marginLeft="17dp"
+        android:fontFamily="@font/notosanskr_regular"
+        android:text="로그인"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>
